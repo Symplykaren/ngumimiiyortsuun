@@ -1,5 +1,7 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
+import AboutHeroImage from '../assets/about-cappadocia.jpg';
+import WorkingImage from '../assets/working.jpg';
+import { Image } from 'astro:assets';
 import Layout from '../layouts/BlogPost.astro';
 ---
 
@@ -19,6 +21,10 @@ import Layout from '../layouts/BlogPost.astro';
 		<li><strong>Biosignal modelling:</strong> EEG functional connectivity (coherence, phase-locking value), ECG and heart rate variability, and time-frequency analysis.</li>
 		<li><strong>Evaluation that holds up:</strong> cross-dataset validation, ablation studies, and significance testing.</li>
 	</ul>
+
+	<figure style="margin: 2rem 0; text-align: center;">
+		<Image src={WorkingImage} width={420} alt="Ngumimi working on her laptop in a café" style="border-radius: 12px; max-width: 100%; height: auto; margin: 0 auto;" />
+	</figure>
 
 	<h2>Beyond research</h2>
 	<ul>
