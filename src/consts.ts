@@ -6,7 +6,8 @@ export const SITE_DESCRIPTION =
   'AI researcher building multimodal models for mental-health assessment from EEG, ECG, speech, and language.';
 
 // Put your CV in public/cv.pdf
-export const CV_URL = '/cv.pdf';
+// export const CV_URL = '/cv.pdf';
+export const CV_URL = '/Ngumimi_Karen_Iyortsuun_CV.pdf';
 
 export const CONTACT = {
   organization: 'Pattern Recognition Laboratory',
