@@ -1,0 +1,46 @@
+---
+import AboutHeroImage from '../assets/about-cappadocia.jpg';
+import WorkingImage from '../assets/working.jpg';
+import { Image } from 'astro:assets';
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="About Ngumimi Karen Iyortsuun"
+	description="AI researcher working on multimodal mental-health assessment, with experience across research, applied AI projects, and publishing."
+	pubDate={new Date('October 19 2026')}
+	heroImage={AboutHeroImage}
+>
+	<p>
+		I'm a PhD candidate in Artificial Intelligence at Chonnam National University in Gwangju, South Korea, working in the Pattern Recognition Laboratory with Prof. Soo-Hyung Kim. I build machine learning models that detect depression and anxiety from EEG, ECG, speech, and language, and I'm defending my dissertation in November 2026.
+	</p>
+
+	<h2>What I work on</h2>
+	<ul>
+		<li><strong>Multimodal and cross-modal learning:</strong> combining EEG, audio, and text in one model, including across datasets that were never collected together.</li>
+		<li><strong>Biosignal modelling:</strong> EEG functional connectivity (coherence, phase-locking value), ECG and heart rate variability, and time-frequency analysis.</li>
+		<li><strong>Evaluation that holds up:</strong> cross-dataset validation, ablation studies, and significance testing.</li>
+	</ul>
+
+	<figure style="margin: 2rem 0; text-align: center;">
+		<Image src={WorkingImage} width={420} alt="Ngumimi working on her laptop in a café" style="border-radius: 12px; max-width: 100%; height: auto; margin: 0 auto;" />
+	</figure>
+
+	<h2>Beyond research</h2>
+	<ul>
+		<li><strong>Gold Prize</strong>, 2025 Industry-Academic Cooperation and AI Hackathon, for the HANA TALK translation system.</li>
+		<li><strong>Encouragement Award</strong>, 2023 AI Industry-Academic Cooperation Project, for a document masking system.</li>
+		<li><strong>Mentoring and lab operations:</strong> I mentor graduate students on deep learning implementation and experimental design, manage the lab website, and act as liaison between the department and lab members.</li>
+		<li><strong>Peer review:</strong> reviewer for BMC Psychiatry.</li>
+	</ul>
+
+	<h2>Before the PhD</h2>
+	<ul>
+		<li><strong>Virtual Editorial Assistant</strong>, Adonis and Abbey Publishers (2021 to 2022): worked between editors and authors on academic journals and books.</li>
+		<li><strong>Social Media Manager</strong>, Nhub Nigeria (2020): ran social advertising campaigns, content, and events.</li>
+		<li><strong>BSc in Computer Science</strong>, University of Mkar, Nigeria (2019).</li>
+	</ul>
+
+	<h2>Tools</h2>
+	<p>Python, PyTorch, TensorFlow, scikit-learn, MNE-Python, Librosa, Pandas, NumPy, Git.</p>
+</Layout>
