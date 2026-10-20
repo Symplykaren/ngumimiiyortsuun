@@ -1,47 +1,51 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = 'Friedrich Nietzsche';
-export const SITE_DESCRIPTION = 'The academic portfolio of Friedrich Nietzsche.';
+export const SITE_TITLE = 'Ngumimi Karen Iyortsuun';
+export const SITE_DESCRIPTION =
+  'AI researcher building multimodal models for mental-health assessment from EEG, ECG, speech, and language.';
 
-export const CV_URL = 'https://shravangoswami.com/resume.pdf';
+// Put your CV in public/cv.pdf
+export const CV_URL = '/cv.pdf';
 
 export const CONTACT = {
-  organization: 'Shravan Goswami',
+  organization: 'Pattern Recognition Laboratory',
   addressLines: [
-    'Creator of Astro Scholar',
+    'Chonnam National University',
+    'Gwangju, South Korea',
   ],
   emails: [
-    'contact@shravangoswami.com',
+    'kareniyortsuun@gmail.com',
   ],
 };
 
 export type SocialIcon = 'website' | 'scholar' | 'email' | 'github' | 'linkedin' | 'twitter';
 
+// TODO: replace the Scholar and LinkedIn URLs with your own profile links
 export const SOCIAL_LINKS: ReadonlyArray<{
   label: string;
   href: string;
   icon: SocialIcon;
 }> = [
   {
+    label: 'Google Scholar',
+    href: 'https://scholar.google.com/',
+    icon: 'scholar',
+  },
+  {
     label: 'GitHub',
-    href: 'https://github.com/shravanngoswamii/astro-scholar',
+    href: 'https://github.com/Symplykaren',
     icon: 'github',
   },
   {
-    label: 'Email',
-    href: 'mailto:contact@shravangoswami.com',
-    icon: 'email',
-  },
-  {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/shravangoswami/',
+    href: 'https://www.linkedin.com/',
     icon: 'linkedin',
   },
   {
-    label: 'X',
-    href: 'https://x.com/shravangoswamii',
-    icon: 'twitter',
+    label: 'Email',
+    href: 'mailto:kareniyortsuun@gmail.com',
+    icon: 'email',
   },
 ];
 
